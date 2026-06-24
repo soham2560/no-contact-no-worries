@@ -1,7 +1,18 @@
 # NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation
 
 Official website repository for **NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation**.
-
+If you find NoContactNoWorries useful for your work please cite:
+```
+@misc{patil2026nocontactnoworriesestimatingcontactvision,
+      title={NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation}, 
+      author={Soham Patil and Avirup Das and Sourabh Bhosale and Spandan Roy},
+      year={2026},
+      eprint={2606.24450},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2606.24450}, 
+}
+```
 This repository contains the source code, images, and videos used to host the project website through GitHub Pages.
 
 ## Repository Structure
