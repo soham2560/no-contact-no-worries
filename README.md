@@ -7,18 +7,11 @@ This repository contains the source code, images, and videos used to host the pr
 ## Repository Structure
 
 ```text
-.
 ├── index.html
 ├── README.md
 └── static
     ├── images
-    │   ├── diagram.png
-    │   └── image.png
     └── videos
-        ├── icra_video_mar6.mp4
-        └── sim_videos
-            ├── dynamic_cube_fixed.mp4
-            └── dynamic_letter_r_fixed.mp4
 ```
 
 ## Website
@@ -29,7 +22,6 @@ The website includes:
 * Methodology and system diagram
 * Simulation results videos
 * Project demonstration video
-* Supplementary visualizations
 
 ## Acknowledgements
 
@@ -38,3 +30,15 @@ This website is based on the excellent website template from the Nerfies project
 https://github.com/nerfies/nerfies.github.io
 
 We thank the Nerfies authors for releasing their website source code publicly.
+
+## License
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+  <img alt="Creative Commons License"
+       style="border-width:0"
+       src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+</a>
+
+This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+
+The website source code is based on the Nerfies project website template and inherits its licensing terms where applicable.
