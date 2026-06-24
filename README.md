@@ -1,6 +1,6 @@
 # No Contact No Worries
 
-Official website repository for **No Contact No Worries**.
+Official website repository for **No Contact No Worries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation**.
 
 This repository contains the source code, images, and videos used to host the project website through GitHub Pages.
 
@@ -41,4 +41,3 @@ We thank the Nerfies authors for releasing their website source code publicly.
 
 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
 
-The website source code is based on the Nerfies project website template and inherits its licensing terms where applicable.
