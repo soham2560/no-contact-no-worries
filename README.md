@@ -1,4 +1,4 @@
-# No Contact No Worries
+# NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation
 
 Official website repository for **No Contact No Worries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation**.
 
