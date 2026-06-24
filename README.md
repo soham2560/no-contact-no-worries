@@ -1,6 +1,6 @@
 # NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation
 
-Official website repository for **No Contact No Worries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation**.
+Official website repository for **NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation**.
 
 This repository contains the source code, images, and videos used to host the project website through GitHub Pages.
 
