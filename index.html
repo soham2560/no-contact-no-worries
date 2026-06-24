@@ -13,7 +13,7 @@
 
   <style>
     body {
-      font-family: 'Noto Sans', sans-serif;
+      font-family: 'Times New Roman', Times, serif;
       background: #fff;
       color: #111;
       margin: 0;
@@ -34,82 +34,95 @@
       padding: 2rem 1.5rem;
     }
 
-    /* HERO */
-    .hero {
-      text-align: center;
-      padding: 3rem 1.5rem 2rem;
-    }
+.hero {
+  padding: 10px 20px 20px;
+  text-align: center;
+}
 
-    .pub-title {
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 2.4rem;
-      font-weight: 700;
-      margin-bottom: 0.75rem;
-    }
+.hero-content {
+  max-width: 1200px;
+  margin: auto;
+}
 
-    .pub-subtitle {
-      font-size: 1.1rem;
-      color: #444;
-      margin-bottom: 1.25rem;
-    }
+.pub-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
 
-    .authors {
-      font-size: 1rem;
-      color: #333;
-      margin-bottom: 0.25rem;
-      line-height: 2;
-    }
-    .authors a {
-      color: #1a0dab;
-      text-decoration: none;
-    }
-    .authors a:hover { text-decoration: underline; }
+.conference {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 5px;
+}
 
-    .affiliations {
-      font-size: 0.9rem;
-      color: #555;
-      margin-bottom: 1.5rem;
-    }
+.conference-badge {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #7c3aed;
+  margin-bottom: 15px;
+}
 
-    .links-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.5rem;
-      margin-top: 1rem;
-    }
+.authors {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
 
-    .link-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.45rem 1.1rem;
-      border: 1.5px solid #bbb;
-      border-radius: 20px;
-      background: #c1a9a9;
-      color: #222;
-      font-size: 0.88rem;
-      font-weight: 600;
-      text-decoration: none;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-      transition: box-shadow 150ms ease, border-color 150ms ease;
-    }
-    .link-btn:hover {
-      border-color: #888;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.13);
-    }
+.authors a {
+  color: #1e88e5;
+  text-decoration: none;
+}
 
-    hr {
-      border: none;
-      border-top: 1px solid #ddd;
-      margin: 0 1.5rem;
-    }
+.affiliations {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.institution-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.institution-logos img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+.links-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.link-btn {
+  background: #333;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.link-btn:hover {
+  transform: translateY(-2px);
+}
 
     /* SECTIONS */
     section {
       max-width: 860px;
       margin: 0 auto;
-      padding: 2.5rem 1.5rem;
+      padding: 1.5rem 1.5rem;
     }
 
     h2 {
@@ -117,7 +130,7 @@
       font-size: 1.9rem;
       font-weight: 700;
       text-align: center;
-      margin-bottom: 1.25rem;
+      margin-bottom: 0.75rem;
     }
 
     .abstract-text {
@@ -125,7 +138,7 @@
       line-height: 1.8;
       text-align: justify;
       font-size: 1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
 
     /* VIDEOS */
@@ -166,7 +179,7 @@
     /* METHOD */
     .method-section {
       background: #f9f9f9;
-      padding: 2.5rem 1.5rem;
+      padding: 1.5rem 1.5rem;
     }
 
     .method-inner {
@@ -178,7 +191,7 @@
       width: 100%;
       max-width: 820px;
       display: block;
-      margin: 0 auto 1.25rem;
+      margin: 0 auto 0.75rem;
       border: 1px solid #ddd;
       border-radius: 6px;
     }
@@ -192,6 +205,66 @@
       margin: 0 auto;
     }
 
+.sim-results {
+  max-width: 1100px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.object-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 18px;
+  background: white;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  border-radius: 6px;
+}
+
+.tab:hover {
+  border-color: #666;
+}
+
+.tab.active {
+  background: #111;
+  color: white;
+  border-color: #111;
+}
+
+.object-info {
+  margin-bottom: 15px;
+}
+
+.object-info h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.object-info p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #666;
+  line-height: 1.6;
+}
+
+.result-gif {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+
     /* TABLE */
     #results-table {
       display: block;
@@ -204,11 +277,11 @@
     /* FOOTER */
     footer {
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 1rem 1rem;
       border-top: 1px solid #ddd;
       font-size: 0.85rem;
       color: #666;
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
 
     @media (max-width: 640px) {
@@ -216,41 +289,207 @@
       .video-grid-3 { grid-template-columns: 1fr; }
       .pub-title { font-size: 1.6rem; }
     }
+    .object-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.object-info {
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+    text-align: center;
+}
+
+.object-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.object-info p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+.media-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.result-gif {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* RGB Text Effect for Highlighted Tabs */
+/* Base Style & RGB Text for Unselected Highlighted Tabs */
+.tab.highlight-tab {
+  background: linear-gradient(to right, #ff007f, #7f00ff, #00f0ff, #ff007f);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700; 
+  border: 1px solid #d9d9d9;
+  position: relative;
+  animation: rgbShift 4s linear infinite;
+  transition: all 0.3s ease;
+}
+
+/* Hover state when unselected */
+.tab.highlight-tab:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 15px rgba(127, 0, 255, 0.3);
+  border-color: #7f00ff;
+}
+
+/* --- THE ACTIVE BLACK STATE WITH RGB GLOW --- */
+.tab.highlight-tab.active {
+  /* 1. Set background to solid dark */
+  background: #111 !important;
+  
+  /* 2. Bring back solid white text */
+  -webkit-text-fill-color: white !important;
+
+  
+  /* 3. Create the moving RGB Border Effect */
+  border: 1px solid transparent;
+  background-image: linear-gradient(#111, #111), 
+                    linear-gradient(to right, #ff007f, #7f00ff, #00f0ff, #ff007f) !important;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-size: 200% auto;
+  
+  /* 4. Vivid Outer Neon Glow + Pulsing Animation */
+  animation: rgbShift 4s linear infinite, activeGlow 2s infinite alternate;
+  transform: none;
+}
+
+/* Shifting animation for the gradient colors */
+@keyframes rgbShift {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Pulsing aura animation for the active black button */
+@keyframes activeGlow {
+  0% {
+    box-shadow: 0 0 8px rgba(0, 240, 255, 0.4), 0 0 15px rgba(255, 0, 127, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 50px rgba(0, 240, 255, 0.6), 0 0 50px rgba(255, 0, 127, 0.4);
+  }
+}
+.bibtex-section {
+  max-width: 1000px;
+  margin: 10px auto;
+}
+
+.bibtex-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.bibtex-section pre {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.bibtex-section code {
+  font-family: "Courier New", monospace;
+  font-size: 0.95rem;
+}
+.section-description {
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 10px auto 25px auto;
+  line-height: 1.6;
+}
+
   </style>
 </head>
 
 <body>
 
   <!-- HERO -->
-  <header class="hero">
-    <h1 class="pub-title gradient-text">NoContactNoWorries</h1>
-    <p class="pub-subtitle">
-      Estimating Contact through Vision and Proprioception
-      for In-Hand Dexterous Manipulation
-    </p>
+<header class="hero">
+
+  <div class="hero-content">
+
+    <h1 class="pub-title">
+      NoContactNoWorries:
+      </h1>
+      <h2>
+      Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation
+      </h2>
+     
+    
+
+    <div class="conference">
+      IEEE/RSJ International Conference on Intelligent Robots and Systems
+      (IROS), 2026
+    </div>
+
+
 
     <div class="authors">
-      <a href="#">Soham Patil</a><sup>1</sup>,&nbsp;
-      <a href="#">Avirup Das</a><sup>2</sup>,&nbsp;
-      <a href="#">Sourabh Bhosale</a><sup>1</sup>,&nbsp;
-      <a href="#">Spandan Roy</a><sup>1</sup>
+      <a href="https://github.com/soham2560">Soham Patil</a><sup>1</sup>,
+      <a href="https://scholar.google.com/citations?user=1XCHkskAAAAJ&hl=en">Avirup Das</a><sup>2</sup>,
+      <a href="https://www.linkedin.com/in/sourabhrbhosale/">Sourabh Bhosale</a><sup>1</sup>,
+      <a href="https://scholar.google.co.in/citations?user=tUKoUgMAAAAJ&hl=en">Spandan Roy</a><sup>1</sup>
     </div>
 
     <div class="affiliations">
-      <sup>1</sup> RRC Lab, IIIT Hyderabad &nbsp;&nbsp;
-      <sup>2</sup> Department of Computer Science, The University of Manchester
+      <sup>1</sup> RRC Lab, IIIT Hyderabad, India
+      <br>
+      <sup>2</sup> The University of Manchester, United Kingdom
     </div>
 
+    <!-- Logos -->
+    <div class="institution-logos">
+      <img src="static/logos/rrc_iiith_logo.png"
+           alt="RRC Lab">
+
+      <img src="static/logos/logo-university-of-manchester.png"
+           alt="University of Manchester">
+
+      <img src="static/logos/unnamed-370x240.webp"
+           alt="IROS 2026">
+
+    </div>
+
+    <!-- Buttons -->
     <div class="links-row">
-      <a href="#" class="link-btn">
-        <i class="ai ai-arxiv"></i> arXiv
-      </a>
-      <a href="#" class="link-btn">
-        <i class="fab fa-github"></i> Code
-      </a>
-    </div>
-  </header>
 
+
+      <a href="https://arxiv.org/abs/2606.24450" class="link-btn">
+        <i class="ai ai-arxiv"></i>
+        arXiv
+      </a>
+
+      <a href="https://github.com/your-repo" class="link-btn">
+        <i class="fab fa-github"></i>
+        Code
+      </a>
+
+
+    </div>
+
+  </div>
+
+</header>
   <hr>
 
   <!-- ABSTRACT -->
@@ -258,36 +497,22 @@
     <h2><span class="gradient-text">Abstract</span></h2>
 
     <p class="abstract-text">
-      Perceiving physical contact is fundamental to dexterous manipulation. While robots often rely on
-      dedicated tactile sensors, humans exhibit a remarkable ability to infer contact by integrating
-      visual information with an innate sense of their body's pose and movement. Inspired by this
-      embodied perceptual skill, we investigate whether a robot can learn to "see" contact — an approach
-      that also offers a scalable alternative to tactile hardware, which faces practical challenges in
-      cost, fragility, and integration.
+      Perceiving physical contact is fundamental to dexterous manipulation. While robots often rely on dedicated hardware tactile sensors, humans exhibit a remarkable ability to infer contact by integrating visual information with an innate sense of their body's pose and movement. Inspired by this embodied perceptual skill, we investigate whether a robot can learn to infer contact from vision, an approach that also offers a scalable alternative to tactile hardware specifically for binary contact estimation, which faces practical challenges in cost, fragility, and integration
     </p>
 
     <p class="abstract-text">
-      We present <strong>NoContactNoWorries</strong>, a transformer-based multimodal framework that fuses
-      RGB-D vision with the robot's proprioception to infer binary contact states as a pseudo-tactile
-      signal for hand-object interactions. We validate by training a single contact prediction model on
-      multiple objects and show that the inferred contact signal can support downstream reinforcement
-      learning agents for in-hand object reorientation, generalizing well to novel objects not seen
-      during training. Experiments in both simulation and on a real-world robot validate our approach,
-      highlighting the feasibility of inferring contact from vision and proprioception.
+We present <strong>NoContactNoWorries</strong>, a transformer-based multimodal framework that fuses RGB-D vision with the robot's proprioception to infer binary contact states as a pseudo-tactile signal for hand-object interactions. We validate by training a single contact prediction model on multiple objects and show that the inferred contact signal supports downstream reinforcement learning agents for in-hand object reorientation, generalizing to novel objects. Experiments in both simulation and on a real-world robot validate our approach, highlighting the feasibility of inferring contact from vision and proprioception.
     </p>
   </section>
 
-  <hr>
-
-  <!-- OVERVIEW VIDEO -->
-  <section>
+    <section>
     <h2><span class="gradient-text">Overview</span></h2>
     <video autoplay muted loop playsinline controls preload="metadata">
       <source src="./static/videos/icra_video_mar6.mp4" type="video/mp4">
     </video>
   </section>
 
-  <hr>
+
 
   <!-- METHODOLOGY -->
   <div class="method-section">
@@ -305,61 +530,130 @@
     </div>
   </div>
 
-  <hr>
 
   <!-- SIMULATION RESULTS -->
-  <section>
-    <h2><span class="gradient-text">Simulation Results</span></h2>
-    <div class="video-grid-2">
-      <div class="video-card">
-        <video autoplay muted loop playsinline controls preload="metadata">
-          <source src="./static/videos/sim_videos/dynamic_cube_fixed.mp4" type="video/mp4">
-        </video>
-        <div class="video-caption">Cube</div>
-      </div>
-      <div class="video-card">
-        <video autoplay muted loop playsinline controls preload="metadata">
-          <source src="./static/videos/sim_videos/dynamic_letter_r_fixed.mp4" type="video/mp4">
-        </video>
-        <div class="video-caption">Letter R</div>
-      </div>
+<section class="sim-results">
+
+  <h2>
+    <span class="gradient-text">Simulation Results</span>
+  </h2>
+
+  <div class="object-tabs">
+    <button class="tab active" onclick="changeObject(this, 'Stairs', 'Training object used for policy learning and base evaluation.', './static/sim_gif/stair.gif')">Stairs</button>
+    <button class="tab" onclick="changeObject(this, 'Cuboid', 'Training object used for policy learning and base evaluation.', './static/sim_gif/cuboid.gif')">Cuboid</button>
+    <button class="tab" onclick="changeObject(this, 'Star', 'Training object used for policy learning and base evaluation.', './static/sim_gif/star.gif')">Star</button>
+    <button class="tab" onclick="changeObject(this, 'Dodecahedron', 'Training object used for policy learning and base evaluation.', './static/sim_gif/dodecahedron.gif')">Dodecahedron</button>
+    <button class="tab" onclick="changeObject(this, 'Pentagonal Prism', 'Training object used for policy learning and base evaluation.', './static/sim_gif/penta_prism.gif')">Pentagonal Prism</button>
+    
+    <button class="tab highlight-tab" onclick="changeTab(this, 'simulation', 'Hexagonal Prism', 'Novel object used for policy evaluation.', './static/sim_gif/hexa_prism.gif')">Hexagonal Prism</button>
+    <button class="tab highlight-tab" onclick="changeTab(this, 'simulation', 'Letter R', 'Novel object used for policy evaluation.', './static/sim_gif/letter_r.gif')">Letter R</button>
+  </div>
+
+  <div class="object-display">
+    <div class="object-info">
+      <h3 id="object-name">Stairs</h3>
+      <p id="object-description">Training object used for policy learning and base evaluation.</p>
     </div>
-  </section>
-
-  <hr>
-
-  <!-- REAL-WORLD RESULTS -->
-  <section>
-    <h2><span class="gradient-text">Real-World Results</span></h2>
-    <div class="video-grid-3">
-      <div class="video-card">
-        <video autoplay muted loop playsinline controls preload="metadata">
-          <source src="./static/videos/sim_videos/dynamic_cube.mp4" type="video/mp4">
-        </video>
-        <div class="video-caption">Cube</div>
-      </div>
-      <div class="video-card">
-        <video autoplay muted loop playsinline controls preload="metadata">
-          <source src="./static/videos/sim_videos/dynamic_cube.mp4" type="video/mp4">
-        </video>
-        <div class="video-caption">Dodecagon</div>
-      </div>
-      <div class="video-card">
-        <video autoplay muted loop playsinline controls preload="metadata">
-          <source src="./static/videos/sim_videos/dynamic_letter_r.mp4" type="video/mp4">
-        </video>
-        <div class="video-caption">R-Shape</div>
-      </div>
+    <div class="media-container">
+      <img id="result-gif" class="result-gif" src="./static/sim_gif/stair.gif" alt="Simulation Result">
     </div>
-  </section>
+  </div>
 
-  <hr>
+</section>
+
+
+
+<section class="real-results">
+
+  <h2>
+    <span class="gradient-text">Real-World Results</span>
+  </h2>
+
+  <div class="object-tabs">
+
+    <button class="tab highlight-tab active"
+      onclick="changeRealWorld(
+      this,
+      'Hexagonal Prism',
+      'Real-world manipulation of an unseen Hexagonal Prism object.',
+      './static/real_gif/real_hex.gif'
+      )">
+      Hexagonal Prism
+    </button>
+
+    <button class="tab highlight-tab"
+      onclick="changeRealWorld(
+      this,
+      'Letter R',
+      'Real-world manipulation of an unseen Letter R object.',
+      './static/real_gif/real_r.gif'
+      )">
+      Letter R
+    </button>
+
+  </div>
+
+  <div class="object-display">
+
+    <div class="object-info">
+      <h3 id="realworld-name">
+        Hexagonal Prism
+      </h3>
+
+      <p id="realworld-description">
+        Real-world manipulation of an unseen Hexagonal Prism object.
+      </p>
+    </div>
+
+    <div class="media-container">
+      <img
+        id="realworld-gif"
+        class="result-gif"
+        src="./static/real_gif/real_hex.gif"
+        alt="Real World Result">
+    </div>
+
+  </div>
+
+</section>
 
   <!-- QUANTITATIVE RESULTS -->
-  <section>
-    <h2><span class="gradient-text">Quantitative Results</span></h2>
-    <img id="results-table" src="./static/images/image.png" alt="Quantitative results table">
-  </section>
+<section>
+  <h2>
+    <span class="gradient-text">Quantitative Results</span>
+  </h2>
+
+  <p class="section-description">
+    Quantitative comparison of NoContactNoWorries on simulation and real-world dexterous objects.
+  </p>
+
+  <img id="results-table"
+       src="./static/images/image.png"
+       alt="Quantitative results table">
+</section>
+<section class="bibtex-section">
+
+  <h2>
+    <span class="gradient-text">BibTeX</span>
+  </h2>
+
+  <p class="section-description">
+    If you find this work useful in your research, please consider citing:
+  </p>
+
+  <pre><code>
+@misc{patil2026nocontactnoworriesestimatingcontactvision,
+  title={NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation},
+  author={Soham Patil and Avirup Das and Sourabh Bhosale and Spandan Roy},
+  year={2026},
+  eprint={2606.24450},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO},
+  url={https://arxiv.org/abs/2606.24450}
+}
+  </code></pre>
+
+</section>
 
   <!-- FOOTER -->
 <!-- ── FOOTER ── -->
@@ -383,7 +677,38 @@
   </div>
 </footer>
 
+<script>
+function changeObject(button, name, description, mediaPath) {
+  document.getElementById("object-name").textContent = name;
+  document.getElementById("object-description").textContent = description;
+  document.getElementById("result-gif").src = mediaPath;
+  document.querySelectorAll(".tab").forEach(tab => tab.classList.remove("active"));
+  button.classList.add("active");
+}
 
+function changeTab(button, type, name, description, simPath) {
+  document.getElementById("object-name").textContent = name;
+  document.getElementById("object-description").textContent = description;
+  document.getElementById("result-gif").src = simPath;
+  document.querySelectorAll(".tab").forEach(tab => tab.classList.remove("active"));
+  button.classList.add("active");
+}
+
+function changeRealWorld(button, name, description, gifPath) {
+
+    document.getElementById("realworld-name").textContent = name;
+
+    document.getElementById("realworld-description").textContent = description;
+
+    document.getElementById("realworld-gif").src = gifPath;
+
+    document.querySelectorAll(".real-results .tab").forEach(tab => {
+        tab.classList.remove("active");
+    });
+
+    button.classList.add("active");
+}
+</script>
 
 </body>
 </html>
